@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+
+
+
+
+/*document.addEventListener("DOMContentLoaded", function() {
     function changeBoxColors() {
         var colorBoxes = document.querySelectorAll('.color-box');
         colorBoxes.forEach(function(box) {
@@ -8,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(changeBoxColors, 2000);
 });
+*/
