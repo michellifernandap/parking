@@ -40,17 +40,28 @@ const APARCAMIENTO_DATA = [
     { planta: '2', numero: 38, disponible: true, precio_hora: 0.25 },
     { planta: '2', numero: 39, disponible: true, precio_hora: 0.25 },
     { planta: '2', numero: 40, disponible: true, precio_hora: 0.25 },
-  
+]
+// Ejemplo de APARCAMIENTO_DATA
+
+function pintarParking() {
+    APARCAMIENTO_DATA.forEach(espacio => {
+        let idEspacio = 'p' + espacio.numero; // Construir el ID, por ejemplo 'p1', 'p2', etc.
+        let elementoEspacio = document.getElementById(idEspacio); // Obtener el elemento del DOM
+
+        if (elementoEspacio) {
+            if (espacio.disponible) {
+                // Si el espacio está disponible
+                elementoEspacio.style.backgroundColor = 'green';
+            } else {
+                // Si el espacio no está disponible
+                elementoEspacio.style.backgroundColor = 'red';
+            }
+        }
+    });
+}
+
+// Llamar a la función para actualizar los colores al cargar la página
+pintarParking();
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    function changeBoxColors() {
-        var colorBoxes = document.querySelectorAll('.color-box');
-        colorBoxes.forEach(function(box) {
-            box.style.backgroundColor = Math.random() < 0.5 ? 'red' : 'green';
-        });
-    }
-
-    setInterval(changeBoxColors, 2000);
-});
