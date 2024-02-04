@@ -24,26 +24,26 @@
                 <div class="card col-md-6">
                     <div class="card-body">
                         <div class="row g-2 p-1">
-                            <div class="row row-cols-4 g-2 p-1">
-                                <div class="col-3 p-3 border red-box" id="p1">
+                            <div class="row row-cols-4 g-2 p-1" id="box1">
+                                <div class="col-3 p-3 border red-box color-box" id="p1">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png" class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
                             </div>
                             <div class="row row-cols-4 g-2 p-1">
-                                <div class="col-3 p-3 border red-box" id="p1">
+                                <div class="col-3 p-3 border red-box color-box" id="p1">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
                                 <div class="col-6" id="p12"></div>
-                                <div class="col-3 p-3 border red-box" id="p1">
+                                <div class="col-3 p-3 border red-box color-box" id="p1">
                                     <img src="./icono-coche.png" class="img-fluid car-image" alt="Coche">
                                 </div>
                             </div>
@@ -58,26 +58,25 @@
                             </div>
                             
                             <div class="row row-cols-4 g-2 p-1">
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
                                 <div class="col-6" id="p12"></div>
-
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
                             </div>
                             <div class="row row-cols-4 g-2 p-1">
-                                <div class="col-3 p-3 border red-box" id="p1">
+                                <div class="col-3 p-3 border red-box color-box" id="p1">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png" class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
-                                <div class="col-3 p-3 border red-box" id="p2">
+                                <div class="col-3 p-3 border red-box color-box" id="p2">
                                     <img src="./icono-coche.png"  class="img-fluid car-image" alt="Coche">
                                 </div>
                             </div>
@@ -165,18 +164,8 @@
 
 
 
-    <script>
-        // Función que se ejecuta cuando el documento está listo
-        document.addEventListener("DOMContentLoaded", function() {
-            var colorBoxes = document.querySelectorAll('.color-box');
-            // Asignar un color aleatorio entre rojo y verde a cada 'color-box'
-            colorBoxes.forEach(function(box) {
-                box.style.backgroundColor = Math.random() < 0.5 ? 'red' : 'green';
-            });
-        });
-    </script>
 
-
+    <script src="./parking.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
